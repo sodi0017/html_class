@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div{
+            border: 1px solid black;
+            border-width: 2px;
+            border-style: solid ;
+            background-color: blue;
+            color: aliceblue;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px 0;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .div1{
+            transform: translate(30px, 30px);
+            /* 양수 음수에 따라 위치가 다름 */
+        }
+        .div2{
+            transform: scale(2, 0.5);
+            /* 배수로 적용됨 */
+        }
+        .div3{
+            transform: rotate(45deg);
+
+        }
+        .div4:hover{
+            transform: scale(1.5, 1.5);
+        }
+        .div5:hover{
+            transform: rotate(40deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- main>div>div${div$}*5 -->
+    <main>
+                <div>
+            <div1>div1</div1>
+            <div2>div2</div2>
+            <div3>div3</div3>
+            <div4>div4</div4>
+            <div5>div5</div5>
+        </div>
+    </main>
+</body>
+</html>

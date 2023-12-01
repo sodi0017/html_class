@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            /* flex: none; */
+            /* min-width: 100px; */
+            background-color: cornflowerblue;
+            margin: 10px;
+            /* width: 100px;
+            height: 100px; */
+            width: 20vw;
+            height: 20vw;
+            /* 뷰포트 단위를 사용하면 현재 화면 크기의 비율에 맞게 설정할 수 있다. */
+        }
+
+        @media (max-width : 500px)  and (min-width : 300px){
+            /* body{
+                background-color: crimson;
+            } */
+
+            section{
+                flex-wrap: wrap;
+            }
+            div{
+                background-color: darkkhaki;
+                width: 40vw;
+                height: 40vw;
+            }
+        }
+
+        @media (max-width : 299px)  and (min-width : 100px){
+
+            section{
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            div{
+                background-color: rgb(245, 229, 2);
+                width: 40vw;
+                height: 40vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>내 사이트</h1>
+        <hr>
+        <section>
+            <span>
+                1. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 2. 남산 위에 저 소나무
+                철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 3. 가을 하늘 공활한데 높고 구름 없이 밝은
+                달은 우리 가슴 일편단심일세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 4. 이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라
+                사랑하세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세
+            </span>
+        </section>
+        <section>
+            <!-- section>div.div$*4 -->
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4"></div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 700px;
+            height: 300px;
+            border: 1px solid cadetblue;
+            background-color: cornflowerblue;
+
+            display: flex;
+            /* 주축을 정렬 */
+            justify-content: center;
+            /* 교차축을 정렬 */
+            align-items: center;
+
+            /* 주축의 방향을 바꾼다 */
+            /* flex-direction: column; */
+            
+            flex-wrap: wrap;
+
+        }
+        .item{
+            width: 200px;
+            height: 80px;
+            border: 1xp solid aliceblue;
+            background-color: thistle;
+            border-radius : 10 px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+
+    </div>
+</body>
+</html>

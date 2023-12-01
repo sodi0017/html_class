@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main,
+        section,
+        div {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        main {
+            width: 80%;
+            height: 600px;
+        }
+
+        section {
+            width: 80%;
+            height: 80%;
+            margin: auto;
+        }
+
+        div {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        main div {
+            border-radius: 20px;
+            background-color: rgb(102, 210, 30);
+        }
+        
+        section > div{
+            background-color: deeppink;
+        }
+        .div3 + div{
+            background-color: indianred;
+        }
+
+        .div3 ~ div{
+            border: 2px solid antiquewhite;
+        }
+        a[id] {
+            color: slateblue;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+        a[href = "http://www.naver.com"]{
+            color:  yellow;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        main
+        <section>
+            section
+            <div class="container">
+                container
+                <div class="div1">div1</div>
+                <div class="div2">
+                    <a href="http://www.naver.com">div2</a>
+                </div>
+                <div class="div3">
+                    <a href="" id="aa">div3</a>
+                </div>
+                <div class="div4">div4</div>
+                <div class="div5">div5</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

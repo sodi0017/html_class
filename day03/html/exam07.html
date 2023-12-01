@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 밑에 적은게 우선순위가 더 높다! 여기다 30px적어놔도 밑에 적은게 먼저임 */
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            color: white;
+        }
+
+        header {
+            background-color: darkgreen;
+            text-align: center;
+
+        }
+
+        footer {
+            background-color: seagreen;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            background-color: coral;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        .main-container {
+            display: flex;
+        }
+
+        aside {
+            background-color: darkblue;
+            /* height: 500px; */
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            background-color: fuchsia;
+            width: 80%;
+
+        }
+
+        .section1,
+        .section2 {
+            background-color: darkorange;
+            /* height: 100px; */
+            width: 400px;
+            margin: 20px;
+
+        }
+
+        .article1{
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 80px;
+            margin: 20px 0;
+        }
+
+        .article-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .article2{
+            background-color: darkkhaki;
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+        }
+
+        .article-container2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .section-container{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="containar">
+        <header>
+            header
+            <nav>
+                <ul>
+                    <!-- nav{nav메뉴$}*4 -->
+                    <li>nav메뉴1</li>
+                    <li>nav메뉴2</li>
+                    <li>nav메뉴3</li>
+                    <li>nav메뉴4</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-container">
+            <aside>aside</aside>
+            <main>
+                <div>main</div>
+                <div class="section-container">
+                    <section class="section1">
+                        <div class="article-container">
+                            <article class="article1">article</article>
+                            <article class="article1">article</article>
+                            <article class="article1">article</article>
+                        </div>
+
+                    <section class="section2">
+                        section
+                        <div class="article-container2">
+                            <article class="article2">article2</article>
+                            <article class="article2">article2</article>
+                            <article class="article2">article2</article>
+                            <article class="article2">article2</article>
+                        </div>
+                    </section>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </section>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

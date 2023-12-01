@@ -1,0 +1,25 @@
+div{
+    background-color: rgb(219, 194, 194);
+    /* 색을 변경할 때 단순히 색의 이름만 사용하는게 아니라 
+    16진수나 rgb값도 사용이 가능하다
+     */
+    border: 1px solid black;
+    /* 
+    border : 블록 요소에 테두리를 설정하는 속성
+    border :  굵기 형태 색상 ;
+    solid : 직선
+    dotted : 점선
+    dashed : 긴 점선
+    */
+
+    /* 블록 요소는 차지하는 영역의 크기를 조절할 수 있다. */
+    width:  100px;
+    height: 100px;
+
+    /* 바깥 여백 */
+    margin: 20px;
+    /* 안쪽 여백 */
+    padding: 20px;
+    /* 블록 요소가 가진 텍스트를 정렬할 때 사용 */
+    text-align: center;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .span--inline{
+            background-color: aliceblue;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rebeccapurple;
+
+            line-height: 100px;
+            /* 인라인 요소는 line-height 속성으로 줄 높이를 조절할 수 있다. */
+
+            letter-spacing: 10px;
+            /* 글자 간격을 조절할 수 있다. */
+
+            
+        }
+        .span--block{
+            display: block;
+            background-color: yellowgreen;
+            color: aliceblue;
+            border: 3px solid salmon;
+            font-size: 25px;
+            font-weight: bold;
+
+            width: 100px;
+            height: 100px;
+
+            margin: 10px auto;
+            
+            text-align: center;
+            line-height: 100px;
+        }
+        .div--inline-block{
+            background-color: darkgray;
+            border: 1px solid black;
+            display: inline-block;
+
+            width: 100px;
+            height: 100px;
+
+            /* inline 블록은 마진 auto를 이용한 중앙 정렬이 불가능 하다 */
+            margin: 10px auto;
+        }
+
+        .div--none{
+            background-color: steelblue;
+            border: 1px solid darkblue;
+            width: 100px;
+            height: 100px;
+
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>display : none</h1>
+    <!-- div.div--none{div$}*5 -->
+    <div class="div--none">div1</div>
+    <div class="div--none">div2</div>
+    <div class="div--none">div3</div>
+    <div class="div--none">div4</div>
+    <div class="div--none">div5</div>
+
+    <h1>display : inline-block</h1>
+    <!-- div.div--inline-block{div$}*5 -->
+    <div class="div--inline-block">div1</div>
+    <div class="div--inline-block">div2</div>
+    <div class="div--inline-block">div3</div>
+    <div class="div--inline-block">div4</div>
+    <div class="div--inline-block">div5</div>
+
+    <h1>display : block</h1>
+    <!-- span.span--block {span$}*5 -->
+    <span class="span--block">span1</span>
+    <span class="span--block">span2</span>
+    <span class="span--block">span3</span>
+    <span class="span--block">span4</span>
+    <span class="span--block">span5</span>
+
+    <h1>display : inline</h1>
+    <!-- span.span--inline {span$}*5-->
+    <span class="span--inline">span1</span>
+    <span class="span--inline">span2</span>
+    <span class="span--inline">span3</span>
+    <span class="span--inline">span4</span>
+    <span class="span--inline">span5</span>
+</body>
+</html>
